@@ -23,14 +23,14 @@
       waitFor(cb){ addEventListener('WebComponentsReady', cb) }
     } 
     WebComponents.waitFor(async () => { 
-      import('./src/start-lit-element.js');
+      import('./src/lazy-element.js');
     });
   </script>
   
   <!-- Change stuff here for your app -->
-  <meta name="description" content="start-lit-element">
+  <meta name="description" content="checkers-element">
   <meta name="theme-color" content="#ffffff">
-  <title>start-lit-element</title>
+  <title>checkers-element</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="./manifest.json">
@@ -45,7 +45,7 @@
     <start-lit-element pie="true"> 
   -->
   
-  <start-lit-element>
+  <lazy-element>
     <!-- Placeholders to improve time to first paint -->
     <h1>Start LitElement!</h1>
     <p>Hello World from LitElement</p>
@@ -58,5 +58,5 @@
     <noscript>
       Could not render the custom element. Check that JavaScript is enabled.
     </noscript>
-  </start-lit-element>
+  </lazy-element>
 </body>
